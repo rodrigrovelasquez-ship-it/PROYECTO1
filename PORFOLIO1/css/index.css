@@ -1,79 +1,70 @@
-/* Reset CSS a todos los html */
 * {
     margin: 0;
-    padding: 0;
+    padding:0;
     box-sizing: border-box;
 }
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 
-body{
-    background-color: none;
-    height: 100vh;
-    min-height: 100vh; /* altura mínima del body al 100% de la ventana */
-    border: 0px solid black;
-    background-color: aqua;
-    height: 100vh; /* altura del body al 100% de la ventana */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8; 
+    color: #333;
+
 }
+
 
 header {
-    background-color: lightblue;
-    height: 20vh;
-    height: 12vh; /* medidas absolutas */
-    background-color: blue;
-    text-align: center;
-    /* flexbox */
-    display: flex; /* modelo de cajas flexibles: contenedor flexible */
-    flex-direction: row; /* dirección de los items (FILA) */
-    flex-wrap: nowrap; /* no permitir salto de línea entre items */
-    justify-content: space-between; /* alineación horizontal de los items */
-}
-
-header figure {
-    border: 5px solid red;
-    height: 100%;
-}
-
-header figure img {
-    height: 70px;
-}
-
-/* Selector descendiente */
-header h1 {
+    background-color: rgb(69, 123, 177); /* Azul oscuro/grisáceo */
     color: white;
     text-align: center;
-    border: 2px solid red;
 }
 
-header nav {
-    border: 0px solid black;
-    text-align: center;
-    padding: 10px;
-    border: 2px solid red;
+header h1 {
+    margin: 0 0 10px 0;
+
 }
 
-header nav a {
-    color: yellow;
-    display: inline-block; /* transformar un E.Bloque en un ELinea */
-    margin-right: 20px;
-    text-decoration: none; /* quitar el subrayado */
-    font-size: 20px;
-    border: 1px solid black;
-    padding: 5px;
-    border-radius: 10px;
+nav a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin: 20px;
+    font-weight: bold;
+    transition: color 1.5s;
 }
 
-header nav a:hover {
-    background-color: rgba(255, 255, 255, 0.5);
+nav a:hover {
+    color: rgb(56, 157, 201); /* Un color turquesa para el efecto hover */
 }
 
 main {
-    background-color: lightgrey;
-    height: 80vh;
-    height: 78vh;
+    /* max-width: 800px;  */
+    margin: 40px auto;
+    background-color: rgb(228, 225, 225);
+    border-radius: 10px;
 }
 
+
+main p {
+    font-size: 1.1em;
+    text-align: justify;
+}
+
+
 footer {
-    background-color: lightgreen;
-    height: 10vh;
-    height: 10vh;
-    background-color: gray;
+    background-color: rgb(69, 123, 177); 
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.9em;
+    position: fixed; 
+    bottom: 0;
+    width: 100%;
+    color: rgb(255, 255, 255);
+}
+
+footer p {
+    margin: 0.1;
 }
